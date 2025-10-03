@@ -1,6 +1,25 @@
-# Program #2: Math Quiz
-# Write a program that gives simple math quizzes.  The program should display two random numbers to be added, such as
+#Author: Faith Lamah
+#Date: 10/03/2025
+#Title: Math Quiz
 
+import random
+def main():
+    another_one = 'y'
+    while another_one == 'y':
+        number1 = random.randint(1, 1000)
+        number2 = random.randint(1, 1000)
+        answer = int(input(f' {number1}\n+{number2}\n-----\n'))
+
+        if answer == number1 + number2:
+            print('Congratulations! You got it!')
+        else:
+            print(f'Incorrect. The correct answer is {answer}')
+        another_one = input('Do you want to try another question? (y/n)')
+
+
+
+if __name__ == '__main__':
+    main()
 #     247
 
 # + 129
